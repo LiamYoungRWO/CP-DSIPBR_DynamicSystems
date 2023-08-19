@@ -1,50 +1,71 @@
-# CP-DSIPBR
-Testing GH/GL/GB Interoperabilites_Cross-Platform Dynamic Systems Interoperability and Performance Benchmarking
-
+---
+description: >-
+  This is a test Repo to use snippet formatted blocks, markdowns, and general
+  integrations to keep tabs on interoperability between GH, GB, and GL
 ---
 
-# Dynamic Software Systems Archive (DSSA)
+# Whiteboard Integer Cross Section: Tab Tester
 
-## Introduction
+Repository to be used to form command subject phrasing and general use tooling between the respective GH,GB,GL platforms. The concept in theory, should serve to demonstrate how dynamic their respective interoperability are, as well as how many languages, frameworks, and other applications and integrations can be fit into as concise a space as possible to demonstrate use between the respective platforms.&#x20;
 
-In the software industry, complexity is a given. Systems, frameworks, and languages are in a constant state of flux, each with its own set of challenges and opportunities. The Dynamic Software Systems Archive (DSSA) is our concerted effort to make sense of this complexity, serving as a comprehensive guide and reference point for dynamic systems in software.
+{% tabs %}
+{% tab title="First Tab" %}
+This is the tab example. Refer to GH once synced for formatting crossover. Basic C++ is the subject. Plug and go fibbonicci is the context.
 
-## Objectives
+```cpp
+// Some code#include <iostream>
 
-The DSSA aims to provide a robust framework for understanding three core aspects:
+void fibonacci(int terms) {
+    long long int t1 = 0, t2 = 1, nextTerm = 0;
 
-1. **Performance Bottlenecks:** Identifying and analyzing the constraints that limit system performance, offering insights into optimization.
-2. **Compatibility:** Understanding how different software components interact, and providing guidelines for ensuring seamless integration.
-3. **Integration Principles:** Offering a set of best practices and patterns for integrating diverse systems effectively.
+    std::cout << "Fibonacci Series: ";
 
-## Why This Archive Matters
+    for (int i = 1; i <= terms; ++i) {
+        if(i == 1) {
+            std::cout << t1 << ", ";
+            continue;
+        }
+        if(i == 2) {
+            std::cout << t2 << ", ";
+            continue;
+        }
+        nextTerm = t1 + t2;
+        t1 = t2;
+        t2 = nextTerm;
+        
+        std::cout << nextTerm << ", ";
+    }
+}
 
-Dynamic systems in software are like ever-changing requirements in Agile methodologies—always evolving and influenced by numerous factors. As these systems become more complex, the need for a unified set of guidelines becomes increasingly evident.
+int main() {
+    int terms;
+    std::cout << "Enter number of terms: ";
+    std::cin >> terms;
 
-The DSSA serves multiple purposes:
+    fibonacci(terms);
+    return 0;
+}
 
-- **Standardization:** It provides a consistent framework for evaluating different aspects of dynamic systems, making it easier to compare and analyze them.
-- **Knowledge Base:** It acts as a repository of accumulated wisdom, offering valuable insights for both novice and experienced developers.
-- **Community Collaboration:** It opens the door for contributions from the broader software community, enriching the archive's content and keeping it up-to-date.
+```
+{% endtab %}
 
-## Archive Structure
+{% tab title="Second Tab" %}
+This is TabTwo: TBD how tabs can be expanded upon. Basic Python factorial is the subject.&#x20;
 
-The DSSA is organized with the precision you'd expect from well-crafted software. It's segmented into languages, frameworks, and systems, each containing:
+```python
+// Some codedef factorial(n):
+    """Return the factorial of a given number."""
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
 
-1. **Code Samples:** Small, focused snippets that demonstrate specific functionalities or patterns.
-2. **Benchmarks:** Tests designed to measure performance and other key metrics.
-3. **Technical Documentation:** In-depth articles and notes that provide context and explanation for the code and benchmarks.
-
-## Contributing
-
-The DSSA is designed to be a living document, and as such, contributions are highly encouraged. When contributing, please keep the following in mind:
-
-- Your contributions should be well-documented and adhere to established best practices.
-- Benchmarks and tests should be reproducible, with clear documentation on how to run them and what to expect.
-- Insights should be backed by data and real-world testing, not just theoretical assumptions.
-
-## Conclusion
-
-The Dynamic Software Systems Archive is more than just a collection of code and articles; it's a comprehensive guide to understanding the complexities of dynamic systems in software. By contributing to this archive, you're not just adding to a database—you're participating in a community effort to make software better, more reliable, and easier to understand.
+if __name__ == "__main__":
+    number = int(input("Enter a number to calculate its factorial: "))
+    print(f"The factorial of {number} is {factorial(number)}")
 
 
+
+```
+{% endtab %}
+{% endtabs %}
