@@ -4,12 +4,11 @@ description: >-
   integrations to keep tabs on interoperability between GH, GB, and GL
 ---
 
-# Whiteboard Integer Cross Section: Tab Tester
+# Whiteboard Integer Cross Section: Tab Tester (untranslatable in intial testing)
 
 Repository to be used to form command subject phrasing and general use tooling between the respective GH,GB,GL platforms. The concept in theory, should serve to demonstrate how dynamic their respective interoperability are, as well as how many languages, frameworks, and other applications and integrations can be fit into as concise a space as possible to demonstrate use between the respective platforms.&#x20;
 
-{% tabs %}
-{% tab title="First Tab" %}
+
 This is the tab example. Refer to GH once synced for formatting crossover. Basic C++ is the subject. Plug and go fibbonicci is the context.
 
 ```cpp
@@ -47,9 +46,9 @@ int main() {
 }
 
 ```
-{% endtab %}
 
-{% tab title="Second Tab" %}
+
+
 This is TabTwo: TBD how tabs can be expanded upon. Basic Python factorial is the subject.&#x20;
 
 ```python
